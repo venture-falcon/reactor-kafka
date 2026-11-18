@@ -12,7 +12,7 @@ jobs:
         fetch-depth: 0 #needed by spotless
     - uses: actions/setup-java@8df1039502a15bceb9433410b1a100fbe190c53b # renovate: tag=v2
       with:
-        distribution: 'temurin'
+        distribution: 'corretto'
         java-version: 8
     - uses: gradle/gradle-build-action@ac2d340dc04d9e1113182899e983b5400c17cda1 # renovate: tag=v2
       name: spotless (license header)
